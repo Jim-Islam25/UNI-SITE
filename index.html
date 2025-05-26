@@ -76,7 +76,6 @@
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
-<!-- Header with animated navbar -->
 <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
         <div class="flex items-center space-x-2">
@@ -87,35 +86,32 @@
         </div>
 
         <nav class="hidden md:flex space-x-8">
-            <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition">Home</a>
-            <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition">Programs</a>
-            <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition">Admissions</a>
-            <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition">Research</a>
-            <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition">Campus Life</a>
+            <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 transition">Home</a>
+            <a href="#programs" class="nav-link text-gray-700 hover:text-blue-600 transition">Programs</a>
+            <a href="#admissions" class="nav-link text-gray-700 hover:text-blue-600 transition">Admissions</a>
+            <a href="#research" class="nav-link text-gray-700 hover:text-blue-600 transition">Research</a>
+            <a href="#campus-life" class="nav-link text-gray-700 hover:text-blue-600 transition">Campus Life</a>
         </nav>
 
-        <div class="flex items-center space-x-4">
-            <button class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition glow">
-                Apply Now
-            </button>
+        <button id="show-apply-form" class="px-8 py-4 bg-white text-blue-600 rounded-full font-bold hover:bg-gray-100 transition transform hover:scale-105 glow">
+            Apply Now
+        </button>
             <button id="mobile-menu-button" class="md:hidden text-gray-700">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
     </div>
 
-    <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
-        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
-        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 transition">Programs</a>
-        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 transition">Admissions</a>
-        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 transition">Research</a>
-        <a href="#" class="block py-2 text-gray-700 hover:text-blue-600 transition">Campus Life</a>
+        <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+        <a href="#programs" class="block py-2 text-gray-700 hover:text-blue-600 transition">Programs</a>
+        <a href="#admissions" class="block py-2 text-gray-700 hover:text-blue-600 transition">Admissions</a>
+        <a href="#research" class="block py-2 text-gray-700 hover:text-blue-600 transition">Research</a>
+        <a href="#campus-life" class="block py-2 text-gray-700 hover:text-blue-600 transition">Campus Life</a>
     </div>
 </header>
 
-<!-- Hero Section -->
-<section class="relative bg-gradient-to-r from-blue-800 to-purple-900 text-white overflow-hidden">
+<section id="home" class="relative bg-gradient-to-r from-blue-800 to-purple-900 text-white overflow-hidden">
     <div class="absolute inset-0 opacity-20">
         <div class="absolute top-0 left-0 w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiPgo8cmVjdCB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDZMNiAwWk02IDZMNiA2WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxMTExMTEiPjwvcGF0aD4KPC9zdmc+');"></div>
     </div>
@@ -129,7 +125,7 @@
                 Join our innovative learning community where technology meets education. Discover programs designed for the digital age.
             </p>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 fade-in">
-                <button class="px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 glow">
+                <button onclick="window.location.href='#programs'" class="px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105 glow">
                     Explore Programs
                 </button>
                 <button class="px-6 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-blue-600 transition transform hover:scale-105">
@@ -146,7 +142,8 @@
     </div>
 </section>
 
-<!-- Stats Section -->
+---
+
 <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
@@ -175,8 +172,9 @@
     </div>
 </section>
 
-<!-- Programs Section -->
-<section class="py-16 bg-gray-50">
+---
+
+<section id="programs" class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Our Programs</h2>
@@ -189,8 +187,8 @@
                     <i class="fas fa-laptop-code text-white text-6xl pulse"></i>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Computer Science</h3>
-                    <p class="text-gray-600 mb-4">Master the fundamentals of computing and software development with our industry-leading program.</p>
+                    <h3 class="text-xl font-bold mb-2">Computer Science (BSc & MSc)</h3>
+                    <p class="text-gray-600 mb-4">Master the fundamentals of computing, software development, and algorithms. Specializations include Cybersecurity, Data Structures, and Web Development.</p>
                     <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
                         Learn More <i class="fas fa-arrow-right ml-2"></i>
                     </button>
@@ -202,8 +200,8 @@
                     <i class="fas fa-brain text-white text-6xl pulse" style="animation-delay: 0.2s;"></i>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Artificial Intelligence</h3>
-                    <p class="text-gray-600 mb-4">Explore the frontiers of machine learning and neural networks with hands-on projects.</p>
+                    <h3 class="text-xl font-bold mb-2">Artificial Intelligence (BSc & MSc)</h3>
+                    <p class="text-gray-600 mb-4">Explore the frontiers of machine learning, neural networks, and expert systems with hands-on projects and real-world applications.</p>
                     <button class="text-purple-600 font-semibold hover:text-purple-800 transition flex items-center">
                         Learn More <i class="fas fa-arrow-right ml-2"></i>
                     </button>
@@ -215,9 +213,48 @@
                     <i class="fas fa-chart-line text-white text-6xl pulse" style="animation-delay: 0.4s;"></i>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Data Science</h3>
-                    <p class="text-gray-600 mb-4">Turn data into insights with our comprehensive curriculum in statistics and analytics.</p>
+                    <h3 class="text-xl font-bold mb-2">Data Science (BSc & MSc)</h3>
+                    <p class="text-gray-600 mb-4">Turn data into actionable insights with our comprehensive curriculum in statistics, big data analytics, and data visualization.</p>
                     <button class="text-green-600 font-semibold hover:text-green-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-2 card-hover">
+                <div class="h-48 bg-gradient-to-r from-red-400 to-red-600 flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-6xl pulse" style="animation-delay: 0.6s;"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Robotics & Automation (BEng & MEng)</h3>
+                    <p class="text-gray-600 mb-4">Design, build, and program intelligent machines. Focus areas include industrial robotics, autonomous systems, and human-robot interaction.</p>
+                    <button class="text-red-600 font-semibold hover:text-red-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-2 card-hover">
+                <div class="h-48 bg-gradient-to-r from-yellow-400 to-yellow-600 flex items-center justify-center">
+                    <i class="fas fa-cloud text-white text-6xl pulse" style="animation-delay: 0.8s;"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Cloud Computing (BSc & MSc)</h3>
+                    <p class="text-gray-600 mb-4">Gain expertise in cloud infrastructure, virtualization, and distributed systems. Prepare for roles in cloud architecture and development.</p>
+                    <button class="text-yellow-600 font-semibold hover:text-yellow-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition transform hover:-translate-y-2 card-hover">
+                <div class="h-48 bg-gradient-to-r from-indigo-400 to-indigo-600 flex items-center justify-center">
+                    <i class="fas fa-paint-brush text-white text-6xl pulse" style="animation-delay: 1s;"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Digital Arts & Animation (BFA)</h3>
+                    <p class="text-gray-600 mb-4">Unleash your creativity with programs in 3D modeling, animation, game design, and digital media production.</p>
+                    <button class="text-indigo-600 font-semibold hover:text-indigo-800 transition flex items-center">
                         Learn More <i class="fas fa-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -232,7 +269,177 @@
     </div>
 </section>
 
-<!-- Features Section -->
+---
+
+<section id="admissions" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Admissions</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Your pathway to becoming a part of the DigitalUni community</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg transition transform hover:-translate-y-2 card-hover">
+                <i class="fas fa-clipboard-list text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Application Requirements</h3>
+                <p class="text-gray-600 mb-4">Find detailed information on academic prerequisites, English proficiency, and required documents for all programs.</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                    <li>Minimum GPA/grades</li>
+                    <li>Standardized test scores (SAT/ACT/GRE, if applicable)</li>
+                    <li>Letters of Recommendation</li>
+                    <li>Personal Statement</li>
+                </ul>
+                <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                    View Requirements <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg transition transform hover:-translate-y-2 card-hover">
+                <i class="fas fa-calendar-alt text-purple-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Important Dates</h3>
+                <p class="text-gray-600 mb-4">Stay informed about application deadlines, decision notification dates, and enrollment periods.</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                    <li>Early Application Deadline: October 15</li>
+                    <li>Regular Application Deadline: January 15</li>
+                    <li>Decision Notification: March 15</li>
+                    <li>Enrollment Deposit Due: May 1</li>
+                </ul>
+                <button class="text-purple-600 font-semibold hover:text-purple-800 transition flex items-center">
+                    Check Deadlines <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg transition transform hover:-translate-y-2 card-hover">
+                <i class="fas fa-dollar-sign text-green-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Tuition & Financial Aid</h3>
+                <p class="text-gray-600 mb-4">Explore tuition fees, scholarship opportunities, grants, and student loan information.</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                    <li>Scholarships based on merit and need</li>
+                    <li>Graduate assistantships</li>
+                    <li>Federal and private loan options</li>
+                    <li>Payment plans available</li>
+                </ul>
+                <button class="text-green-600 font-semibold hover:text-green-800 transition flex items-center">
+                    Learn About Aid <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <button onclick="window.location.href='#apply-now-section'" class="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition transform hover:scale-105 glow">
+                Start Your Application
+            </button>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="research" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Pioneering Research</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Driving innovation and solving real-world challenges through cutting-edge research</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <img src="http://googleusercontent.com/image_generation_content/1" alt="Research Lab with scientists" class="rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div class="absolute -bottom-6 -right-6 w-48 h-32 bg-purple-500 rounded-xl opacity-80 glow floating" style="animation-delay: 0.2s;"></div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">Transformative Discoveries</h3>
+                <p class="text-gray-600 mb-6">Our faculty and students are at the forefront of digital innovation, conducting groundbreaking research in areas such as:</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                    <li><span class="font-semibold text-blue-600">Advanced Machine Learning:</span> Developing next-generation AI models for complex problem-solving.</li>
+                    <li><span class="font-semibold text-purple-600">Cybersecurity & Blockchain:</span> Enhancing digital security and exploring decentralized technologies.</li>
+                    <li><span class="font-semibold text-pink-600">Human-Computer Interaction:</span> Designing intuitive and immersive digital experiences.</li>
+                    <li><span class="font-semibold text-indigo-600">Sustainable Computing:</span> Researching energy-efficient algorithms and green IT solutions.</li>
+                </ul>
+                <p class="text-gray-600 mb-6">We encourage interdisciplinary collaboration and provide state-of-the-art facilities to foster an environment of discovery.</p>
+                <button class="px-6 py-3 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition transform hover:scale-105 glow">
+                    Explore Research Areas
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <h3 class="text-2xl font-bold mb-4 gradient-text">Our Research Centers</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <i class="fas fa-flask text-blue-500 text-3xl mb-3"></i>
+                    <h4 class="font-semibold text-lg mb-2">AI Innovation Lab</h4>
+                    <p class="text-gray-600 text-sm">Dedicated to pushing the boundaries of artificial intelligence.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <i class="fas fa-shield-alt text-purple-500 text-3xl mb-3"></i>
+                    <h4 class="font-semibold text-lg mb-2">Cyber Resilience Center</h4>
+                    <p class="text-gray-600 text-sm">Focused on developing robust cybersecurity solutions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                    <i class="fas fa-globe text-pink-500 text-3xl mb-3"></i>
+                    <h4 class="font-semibold text-lg mb-2">Digital Futures Institute</h4>
+                    <p class="text-gray-600 text-sm">Exploring the societal impact and potential of emerging digital technologies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="campus-life" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Vibrant Campus Life</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Experience a dynamic and supportive community beyond the classroom</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg card-hover">
+                <img src="http://googleusercontent.com/image_generation_content/3" alt="Student Clubs" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Student Organizations & Clubs</h3>
+                    <p class="text-gray-600 mb-4">Join over 100 student-led clubs, from coding societies and robotics teams to e-sports and cultural associations.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Discover Clubs <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg card-hover">
+                <img src="http://googleusercontent.com/image_generation_content/2" alt="Campus Events" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Events & Activities</h3>
+                    <p class="text-gray-600 mb-4">Participate in hackathons, tech talks, guest lectures, cultural festivals, and sports events throughout the year.</p>
+                    <button class="text-purple-600 font-semibold hover:text-purple-800 transition flex items-center">
+                        View Calendar <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg card-hover">
+                <img src="http://googleusercontent.com/image_generation_content/0" alt="Student Support" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Support Services</h3>
+                    <p class="text-gray-600 mb-4">Access comprehensive support, including academic advising, career counseling, mental health services, and disability support.</p>
+                    <button class="text-pink-600 font-semibold hover:text-pink-800 transition flex items-center">
+                        Explore Services <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <button class="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition transform hover:scale-105 glow">
+                Life at BDUni
+            </button>
+        </div>
+    </div>
+</section>
+
+---
+
 <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <div class="flex flex-col lg:flex-row items-center">
@@ -281,7 +488,7 @@
 
             <div class="lg:w-1/2 relative">
                 <div class="bg-blue-500 rounded-2xl overflow-hidden w-full h-80 md:h-96 relative">
-                    <div class="absolute inset-0 bg-gradient-to-t from-blue-600 to-blue-400 opacity-90"></div>
+                    <img src="http://googleusercontent.com/image_generation_content/2" alt="Students in a classroom" class="absolute inset-0 w-full h-full object-cover opacity-90">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <i class="fas fa-play-circle text-white text-6xl md:text-8xl opacity-80 hover:opacity-100 transition cursor-pointer"></i>
                     </div>
@@ -293,7 +500,8 @@
     </div>
 </section>
 
-<!-- Testimonials Section -->
+---
+
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
@@ -365,13 +573,58 @@
     </div>
 </section>
 
-<!-- CTA Section -->
+---
+
+<section id="apply-now-section" class="py-16 bg-gradient-to-r from-blue-700 to-purple-800 text-white hidden">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Your Future Starts Here</h2>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Ready to join DigitalUni? Fill out the form below to begin your application journey.</p>
+        </div>
+
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="full-name" class="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" required>
+                </div>
+                <div>
+                    <label for="program" class="block text-gray-700 text-sm font-bold mb-2">Desired Program</label>
+                    <select id="program" name="program" class="shadow border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <option value="">Select a Program</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Robotics & Automation">Robotics & Automation</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Digital Arts & Animation">Digital Arts & Animation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="+880 1XXXXXXXXX">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-full focus:outline-none focus:shadow-outline transition glow">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+---
+
 <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Journey?</h2>
         <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">Join thousands of students who are shaping the future through digital innovation. Applications for Fall 2023 are now open.</p>
         <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <button class="px-8 py-4 bg-white text-blue-600 rounded-full font-bold hover:bg-gray-100 transition transform hover:scale-105 glow">
+            <button id="show-apply-form" class="px-8 py-4 bg-white text-blue-600 rounded-full font-bold hover:bg-gray-100 transition transform hover:scale-105 glow">
                 Apply Now
             </button>
             <button class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-blue-600 transition transform hover:scale-105">
@@ -381,7 +634,8 @@
     </div>
 </section>
 
-<!-- Footer -->
+---
+
 <footer class="bg-gray-900 text-white py-12">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -405,22 +659,22 @@
             <div>
                 <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Programs</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Admissions</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Tuition & Aid</a></li>
+                    <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    <li><a href="#programs" class="text-gray-400 hover:text-white transition">Programs</a></li>
+                    <li><a href="#admissions" class="text-gray-400 hover:text-white transition">Admissions</a></li>
+                    <li><a href="#tuition" class="text-gray-400 hover:text-white transition">Tuition & Aid</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4 class="text-lg font-semibold mb-4">Resources</h4>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Library</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Career Services</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Alumni Network</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Events</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">News</a></li>
+                    <li><a href="#library" class="text-gray-400 hover:text-white transition">Library</a></li>
+                    <li><a href="#careers" class="text-gray-400 hover:text-white transition">Career Services</a></li>
+                    <li><a href="#alumni" class="text-gray-400 hover:text-white transition">Alumni Network</a></li>
+                    <li><a href="#events" class="text-gray-400 hover:text-white transition">Events</a></li>
+                    <li><a href="#news" class="text-gray-400 hover:text-white transition">News</a></li>
                 </ul>
             </div>
 
@@ -429,7 +683,7 @@
                 <ul class="space-y-2">
                     <li class="flex items-start">
                         <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
-                        <span class="text-gray-400">123 Digital Way, Tech City, TC 12345</span>
+                        <span class="text-gray-400">123  UNIWay, Tech City, TC 12345</span>
                     </li>
                     <li class="flex items-center">
                         <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
@@ -444,7 +698,8 @@
         </div>
 
         <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023 Digital University. All rights reserved.</p>
+            <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023  BDUni. All rights reserved.</p>
+
             <div class="flex space-x-6">
                 <a href="#" class="text-gray-500 hover:text-white transition text-sm">Privacy Policy</a>
                 <a href="#" class="text-gray-500 hover:text-white transition text-sm">Terms of Service</a>
@@ -454,7 +709,6 @@
     </div>
 </footer>
 
-<!-- Back to Top Button -->
 <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center transition opacity-0 invisible hover:bg-blue-700">
     <i class="fas fa-arrow-up"></i>
 </button>
@@ -464,9 +718,11 @@
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
 
     // Back to top button
     const backToTopButton = document.getElementById('back-to-top');
@@ -492,34 +748,35 @@
     const counters = document.querySelectorAll('.stats-counter');
     const speed = 200;
 
-    function animateCounters() {
-        counters.forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-            const increment = target / speed;
+    function animateCountersForSingleCounter(counter) {
+        const target = +counter.getAttribute('data-target');
+        let count = +counter.innerText;
+        const increment = target / speed;
 
-            if (count < target) {
-                counter.innerText = Math.ceil(count + increment);
-                setTimeout(animateCounters, 1);
-            } else {
-                counter.innerText = target;
-            }
-        });
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            requestAnimationFrame(() => animateCountersForSingleCounter(counter));
+        } else {
+            counter.innerText = target;
+        }
     }
 
     // Intersection Observer for counter animation
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounters();
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    counters.forEach(counter => {
-        observer.observe(counter);
-    });
+    const statsSection = document.querySelector('.stats-counter');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    counters.forEach(counter => {
+                        counter.innerText = '0';
+                        animateCountersForSingleCounter(counter);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        observer.observe(statsSection.closest('section'));
+    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -536,12 +793,26 @@
                 });
 
                 // Close mobile menu if open
-                if (!mobileMenu.classList.contains('hidden')) {
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
                 }
             }
         });
     });
+
+    // Toggle Apply Now form visibility
+    const applyNowSection = document.getElementById('apply-now-section');
+    const showApplyFormButton = document.getElementById('show-apply-form');
+
+    if (showApplyFormButton && applyNowSection) {
+        showApplyFormButton.addEventListener('click', () => {
+            applyNowSection.classList.toggle('hidden');
+            if (!applyNowSection.classList.contains('hidden')) {
+                // Scroll to the form after it's visible
+                applyNowSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
 </script>
 </body>
 </html>
